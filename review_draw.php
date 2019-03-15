@@ -28,15 +28,15 @@ $query = mysqli_query($connection, "SELECT `name`, `review_post_date`, `location
         <img class="comment-pic" src="icon_users/default.png"/> <span><? echo $row['name']; ?></span>
     </p>
     <div class="l-toggle">
-        <div class="l-caption">
-            <p>
+        <div class="l-caption">          
                 <img class="review-pic" src="<? echo $row['review_foto']; ?>">
+            <div>
                 Оценки:<br>
                 Цена: <? echo $row['rating_1']; ?> из 5 <br>
                 Вкус/Качество: <? echo $row['rating_2']; ?> из 5 <br>
                 Сервис(Комфорт): <? echo $row['rating_3']; ?> из 5 <br>
                 Скорость: <? echo $row['rating_4']; ?> из 5 <br>
-            </p>
+            </div>
             <input type="checkbox" id="hd-1" class="comment-hide"/>
             <label class="list" for="hd-1">Расскрыть весь отзыв</label>
             <div class="l-content">

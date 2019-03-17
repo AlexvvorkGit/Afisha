@@ -45,3 +45,7 @@ jQuery.fn.putCursorAtEnd = function() {
         }
     });
 };
+
+$('.carousel').carousel({
+    inteval: 2000
+})

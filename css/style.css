@@ -234,17 +234,23 @@ Start Review draw Style
 
  -------------------------------- */
 
-.conteiner-inner{
+.conteiner-inner {
     width: 750px;
     padding: 0 15px 15px 15px;
     margin: 0 auto;
     border: 2px solid #39f572;
 
 }
+
 .comment-pic {
     border-radius: 12px;
     width: 50px;
     height: 50px;
+}
+
+.nikname {
+    margin: 18px;
+    font-size: large;
 }
 
 .l-toggle {
@@ -254,11 +260,20 @@ Start Review draw Style
 
 .l-caption {
     height: 170px;
-    line-height: 1.4;
+    line-height: 1.6;
     display: flex;
 }
 
 .l-caption label.list {
+    width: 185px;
+    cursor: pointer;
+    color: #005b7f;
+    border-bottom: 1px dashed;
+    margin-top: 30px;
+    margin-left: auto
+}
+
+.l-list {
     width: 185px;
     cursor: pointer;
     color: #005b7f;
@@ -273,6 +288,16 @@ Start Review draw Style
     margin-right: 10px;
     border: 1px solid #ccc;
     padding: 5px;
+}
+
+.l-caption-hide {
+    line-height: 1.4;
+    margin: 5px 10px;
+
+}
+
+.comment-review {
+    display: flex;
 }
 
 .comment-hide {
@@ -292,7 +317,8 @@ Start Review draw Style
     padding: 10px;
     margin: 15px 5px;
 }
-.hr{
+
+.hr {
     display: block;
     unicode-bidi: isolate;
     overflow: hidden;
@@ -305,3 +331,151 @@ Start Review draw Style
 End Review draw Style
 
  -------------------------------- */
+
+.block-rating {
+    margin: 10px auto;
+    width: 300px;
+    display: block;
+
+}
+
+em {
+    display: none;
+}
+
+/* --------------------------------
+
+Start Page content Style
+
+ -------------------------------- */
+/* START  Carousel Style */
+.carousel{
+    max-width: 300px;
+    max-height: 250px;
+    padding: 1px;
+}
+.carousel-item{
+    background: #333;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 80%;
+    bottom: -10px;
+    border: 1px solid black;
+}
+.carousel-indicators li.active {
+    background-color: blueviolet;
+}
+.img-size-carousel{
+    width: 300px;
+    height: 250px;
+}
+
+/* END Carousel Style */
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.ul, .li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.main-conteiner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #1e1e1e;
+}
+
+.nav {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    margin-left: 180px;
+}
+
+.menu li {
+    font-size: 14px;
+    margin-right: 22px;
+    margin-top: 40px;
+}
+
+.menu li a {
+    color: #fff3cd;
+    padding: 12px 0;
+    text-decoration: none;
+}
+
+.menu li.active a,
+.menu li a:hover {
+    color: #6bff3d;
+    border-top: 1px solid #6bff3d;
+    border-bottom: 1px solid #6bff3d;
+
+}
+
+.phone {
+    margin-left: auto;
+    color: #fff3cd;
+    margin-top: 40px;
+}
+
+.bar {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.left-sbar {
+    float: left;
+    width: 1000px;
+    display: inline-grid;
+}
+
+.right-sbar {
+    float: right;
+    width: 200px;
+    height: 200px;
+    background: green;
+
+}
+.card-container{
+    margin: 5px auto;
+    display: flex;
+    width: 800px;
+    height: 250px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.right-descr{
+ margin: 5px 15px;
+}
+
+.card-main-descr{
+    display: flex;
+}
+
+.card-category{
+    margin-right: 10px;
+}
+.card-name{
+
+}

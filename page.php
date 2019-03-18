@@ -9,36 +9,10 @@ require('include/functions.php');
 get_file();
 ?>
 
-    <header class="header">
-
-        <div class="main-conteiner">
-
-            <nav class="nav">
-                <img src="logo/Afisha__logo.png" alt="logo company" class="logo">
-
-                <ul class="ul menu">
-                    <li class="li"><a href="#">Главная</a></li>
-                    <li class="li"><a href="#">Страница</a></li>
-                    <li class="li"><a href="#">Должна</a></li>
-                    <li class="li"><a href="#">Быть</a></li>
-                    <li class="li"><a href="#">Туту</a></li>
-                </ul>
-                <div class="phone">
-                    +7 909 909 99 99
-                </div>
-            </nav>
-            <div class="offer">
-
-
-            </div>
-
-        </div>
-    </header>
     <div class="bar">
         <div class="left-sbar">
 
             <? get_file("list_card"); ?>
-
 
         </div>
         <div class="right-sbar">

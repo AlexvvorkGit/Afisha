@@ -17,6 +17,33 @@
     <script type="text/javascript" language="javascript" src="plugins/ratings/js/rating.js"></script>
 </head>
 <body>
+
+
+<header class="header">
+
+    <div class="main-conteiner">
+
+        <nav class="nav">
+            <img src="logo/Afisha__logo.png" alt="logo company" class="logo">
+
+            <ul class="ul menu">
+                <li class="li"><a href="#">Главная</a></li>
+                <li class="li"><a href="page.php">Страница</a></li>
+                <li class="li"><a href="#">Должна</a></li>
+                <li class="li"><a href="#">Быть</a></li>
+                <li class="li"><a href="#">Туту</a></li>
+            </ul>
+            <div class="phone">
+                +7 909 909 99 99
+            </div>
+        </nav>
+        <div class="offer">
+
+
+        </div>
+
+    </div>
+</header>
 <?php
 /**
  * Created by PhpStorm.

@@ -36,7 +36,9 @@ while ($row = mysqli_fetch_assoc($query)) {
             <div class="carousel-inner" role="listbox">
                  <? $active=1; $counter =1; for ($img = 0; $img < count($image); $img++ ){?>
                 <div class="carousel-item <? if($active==1) {echo "active"; $active=0;} ?>">
+                    <a href="target_page.php?id_card=<?echo $row['cid'];?>">
                     <img class="img-size-carousel" src="<? echo $image[$counter];?>" alt="slide-<?echo $img;?>">
+                    </a>
                 </div>
                 <? $counter++; } $active=1;?>
             </div>

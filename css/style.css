@@ -479,3 +479,41 @@ Start Page content Style
 .card-name{
 
 }
+
+/* --------------------------------
+
+END Page content Style
+
+ -------------------------------- */
+
+
+/* --------------------------------
+
+Start Target Page content Style
+
+ -------------------------------- */
+
+.target_content{
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.tc_head{
+    display: flex;
+
+}
+
+.tc_name{
+
+}
+.tc_contact{
+
+}
+
+
+/* --------------------------------
+
+END Target Page content Style
+
+ -------------------------------- */

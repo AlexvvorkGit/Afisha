@@ -21,6 +21,7 @@ get_file();
 
             if($_GET['link'] == 'reg')
                 get_file('registration');
+
             ?>
 
         </div>

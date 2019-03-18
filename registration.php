@@ -67,7 +67,7 @@ if(!empty($_POST['email']) && isset($_POST['email']) && !empty($_POST['password'
 }
 
 ?>
-<form method="post" action="registration.php" enctype="multipart/form-data">
+<form method="post" action="registration.php" target="_blank" enctype="multipart/form-data">
     <label>Email</label>
     <input type="text" name="email" class="input" placeholder="asd@hf.ru"/>
     <label>Name</label>

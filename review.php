@@ -18,6 +18,8 @@ if (!empty($_POST['email']) && isset($_POST['email']) && !empty($_POST['nikname'
     $email = mysqli_real_escape_string($connection, $_POST['email']);
     $nikname = mysqli_real_escape_string($connection, $_POST['nikname']);
     $comment = mysqli_real_escape_string($connection, $_POST['comment']);
+    $location = mysqli_real_escape_string($connection, $_POST['loc']);
+    $location_id = mysqli_real_escape_string($connection, $_POST['loc_id']);
     $r1 = $_POST['2id-review'];
     $r2 = $_POST['3id-review'];
     $r3 = $_POST['4id-review'];
@@ -77,19 +79,24 @@ if (!empty($_POST['email']) && isset($_POST['email']) && !empty($_POST['nikname'
         }
         $post_date = date('Y-m-d h:i:s', time());
         echo $r1.$r2.$r3.$r4;
-        $query = mysqli_query($connection, "INSERT INTO `review`(`email`, `review_post_date`, `location`, `rating_1`, `rating_2`, `rating_3`, `rating_4`, `review_video`, `review_foto`, `review_comment`, `location_id`, `name`) VALUES ('$email', '$post_date','1', '$r1','$r2','$r3','$r4','$path_video','$path_foto','$comment', 1, '$nikname');");
+        $query = mysqli_query($connection, "INSERT INTO `review`(`email`, `review_post_date`, `location`, `rating_1`, `rating_2`, `rating_3`, `rating_4`, `review_video`, `review_foto`, `review_comment`, `location_id`, `name`) VALUES ('$email', '$post_date','$location', '$r1','$r2','$r3','$r4','$path_video','$path_foto','$comment', '$location_id', '$nikname');");
 
     }
 }
 ?>
-<nav class="review_banner">
-    <a class="review_up" href="#0">Оставить отзыв</a>
-</nav>
 
 <div class="review-modal">
     <div class="user-modal-window">
     <div id="review-show-form">
-        <form method="post" action="review.php" class="review_form" target="_parent" enctype="multipart/form-data">
+        <form method="post" action="review.php" class="review_form" target="_blank" enctype="multipart/form-data">
+            <p style="display:none;">
+                <label for="nikname"> Локация </label>
+                <input type="text" name="loc" id="loc" placeholder="loca"/>
+            </p>
+            <p style="display:none;">
+                <label for="nikname"> Локация_id</label>
+                <input type="text" name="loc_id" id="loc_id" placeholder="loca"/>
+            </p>
             <p class="fieldset">
                 <label class="label-review" for="nikname"> Имя (Никнэйм):</label>
                 <input class="input-review" type="text" name="nikname" id="nikname" placeholder="Имя"/>

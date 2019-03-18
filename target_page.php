@@ -7,6 +7,7 @@
  */
 
 require('include/functions.php');
+require('plugins/ratings/_drawrating.php');
 require_once 'db.php';
 
 define('DELIMITER', __DIR__);
@@ -20,7 +21,10 @@ $row = mysqli_fetch_assoc($query);
 $image = explode(DELIMITER, $row['photos']);
 unset($image[0]);
 ?>
+<? get_file("review"); ?>
 
+    <div class="bar">
+    <div class="left-sbar">
 <div class="target_content">
     <div class="tc_head">
         <div class="main_img"><img src="<? echo $image[1]; ?>" alt="main photo"></div>
@@ -43,6 +47,20 @@ unset($image[0]);
         <div class="tc_map">  </div>
 
 </div>
+    </div>
+
+        <div class="right-sbar">
+            <nav class="review_banner">
+                <a class="review_up" href="#0"><h5>Оставить отзыв</h5></a>
+            </nav>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById('loc').value = "<?echo $row['location'];?>";
+        document.getElementById('loc_id').value = "<?echo $row['cid'];?>";
+    </script>
     <?
+
 get_file('footer');
 ?>

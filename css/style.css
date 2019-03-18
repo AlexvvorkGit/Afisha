@@ -399,7 +399,7 @@ Start Page content Style
 }
 
 .header {
-    background: #1e1e1e;
+    background: #272323;
 }
 
 .nav {
@@ -498,6 +498,15 @@ Start Target Page content Style
     width: 1200px;
     margin: 0 auto;
 }
+.target_content .tc_head .main_img img{
+    width: 200px;
+    height: 200px;
+}
+
+.target_content .tc_photo img{
+    width: 300px;
+    height: 300px;
+}
 
 .tc_head{
     display: flex;
@@ -510,10 +519,100 @@ Start Target Page content Style
 .tc_contact{
 
 }
+.tc_video{
+    width: 800px;
+    margin: 0 auto;
+}
 
 
 /* --------------------------------
 
 END Target Page content Style
+
+ -------------------------------- */
+
+
+/* --------------------------------
+
+START Footer Style
+
+ -------------------------------- */
+.footer-container .site-footer {
+    position: absolute;
+    height: 65%;
+    bottom: 0;
+    overflow: visible;
+    z-index: 2;
+}
+.footer-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.fp-section.fp-table{
+    display: table;
+    table-layout: fixed;
+    width: 2500px;
+    height: 300px;
+    padding-top: 100px;
+}
+.site-footer {
+    letter-spacing: 2.4px;
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: 12px;
+}
+
+.site-footer .logo {
+    top: -13px;
+    margin: 0;
+    position: relative;
+}
+
+.footer-line {
+    border-top: 8px solid #327c31;
+    display: block;
+    background-color: #272323;
+    -webkit-transform: rotate(-1.8deg);
+    -moz-transform: rotate(-1.8deg);
+    -ms-transform: rotate(-1.8deg);
+    -o-transform: rotate(-1.8deg);
+    transform: rotate(-1.8deg);
+    position: absolute;
+    width: 2500px;
+    height: 160% !important;
+    top: -42%;
+    left: -5%;
+    z-index: -1;
+}
+
+.container-fluid {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+.nav-line{
+    display: flex;
+    margin-left: 50px;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 600px;
+}
+.list-inline{
+    display: flex;
+    padding-right: 15px;
+}
+.list-inline li{
+    padding-right: 15px;
+}
+
+/* --------------------------------
+
+END Footer Style
 
  -------------------------------- */

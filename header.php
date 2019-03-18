@@ -28,9 +28,9 @@
             <img src="logo/Afisha__logo.png" alt="logo company" class="logo">
 
             <ul class="ul menu">
-                <li class="li"><a href="#">Главная</a></li>
-                <li class="li"><a href="page.php">Страница</a></li>
-                <li class="li"><a href="#">Должна</a></li>
+                <li class="li"><a href="page.php?link=main">Главная</a></li>
+                <li class="li"><a href="page.php?link=page">Страница</a></li>
+                <li class="li"><a href="page.php?link=reg">Регистрация</a></li>
                 <li class="li"><a href="#">Быть</a></li>
                 <li class="li"><a href="#">Туту</a></li>
             </ul>

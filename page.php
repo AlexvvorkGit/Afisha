@@ -12,7 +12,16 @@ get_file();
     <div class="bar">
         <div class="left-sbar">
 
-            <? get_file("list_card"); ?>
+            <?
+            if($_GET['link'] == 'main')
+                get_file("list_card");
+
+            if($_GET['link'] == 'page')
+                echo "Пока ничего(";
+
+            if($_GET['link'] == 'reg')
+                get_file('registration');
+            ?>
 
         </div>
         <div class="right-sbar">

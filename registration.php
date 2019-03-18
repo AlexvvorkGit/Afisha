@@ -1,7 +1,5 @@
 <?php
-require( 'include/functions.php' );
 require_once 'db.php';
-get_file();
 
 define('PATH_FOTOS', __DIR__ . '\images\_'); // путь для фото
 if(!empty($_POST['email']) && isset($_POST['email']) && !empty($_POST['password']) &&  isset($_POST['password']) && !empty($_POST['name']) &&  isset($_POST['name'])) {

@@ -5,6 +5,8 @@ require('include/functions.php');
 get_file();
 ?>
 
+<a href="page.php?link=main" ><h1> Перейти на бета версию сайта </h1></a>
+
 <?php
 if (!empty($_SESSION['session_id'])) {
     echo "<p align=\"right\">Вы авторизированы как " . $_SESSION['session_username'] . "</p>";

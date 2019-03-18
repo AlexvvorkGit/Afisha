@@ -30,17 +30,19 @@ unset($image[0]);
             </div>
             <div class="tc_contact"> <?echo $row['phones'] . '<br>' . $row['location'] ?>  </div>
         </div>
+    </div>
         <div class="tc_photo">
         <?for($img=2; $img <= count($image); $img++ ){?>
             <img src="<? echo $image[$img];?>" alt="" class="">
         <?}?>
         </div>
-        <div class="tc_descr"> <? $row['description'];?> </div>
+        <div class="tc_descr"> <? echo $row['description'];?> </div>
         <div class="tc_video">
-            <video src="video/_2019-03-13%2010-12-38K-391%20-%20Mystery%20(The%20Escape%20Game).mp4"></video> </div>
+            <video width="800px" controls> <source src="video\_2019-03-13 10-08-12K-391 - Mystery (The Escape Game).mp4"/></video>
+        </div>
         <div class="tc_map">  </div>
-    </div>
 
+</div>
     <?
 get_file('footer');
 ?>
